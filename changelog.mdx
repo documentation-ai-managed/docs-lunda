@@ -1,0 +1,125 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Lunda, ensuring you stay informed about new features and fixes.
+---
+
+## Latest Releases
+
+Stay current with Lunda's evolution. Review release notes below to understand new capabilities, fixes, and changes that impact your documentation workflows.
+
+<Callout kind="info">
+  Enable notifications in your Lunda dashboard at `https://dashboard.example.com/settings/notifications` to receive email alerts for major releases.
+</Callout>
+
+<Update label="2024-10-15" description="v1.3.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for teams, allowing multiple users to edit docs simultaneously
+- Introduced custom brand color support—set yours to `#3B82F6` in project settings
+
+## Improvements
+
+- Enhanced search with fuzzy matching and syntax highlighting in results
+- Optimized page load times by `>30%` for large documentation sites
+
+## Bug Fixes
+
+- Fixed parsing errors in nested code blocks within JSX components
+- Resolved anchor link navigation issues in table of contents
+
+</Update>
+
+<Update label="2024-09-25" description="v1.2.0" tags={["bugfix", "improvement"]}>
+
+## Improvements
+
+- Upgraded MDX parsing engine for better special character handling like `{` and `<`
+- Added auto-escaping suggestions in the editor for common pitfalls
+
+## Bug Fixes
+
+- Corrected frontmatter YAML validation to prevent blank line errors
+- Fixed component attribute rendering for arrays like `tags={["feature"]}`
+
+</Update>
+
+<Update label="2024-08-10" description="v1.1.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Launched Update component for streamlined changelog management
+- Integrated Lucide icons library with `>500` options like `book-open` and `zap`
+
+## Breaking Changes
+
+- Updated JSX attribute requirements: strings now mandate double quotes only
+- Deprecated single-quote attributes in components—migrate to double quotes
+
+## Bug Fixes
+
+- Patched Mermaid diagram rendering (now strictly code blocks, no `<Mermaid>` component)
+
+</Update>
+
+## Upgrading Lunda
+
+Follow these steps to update your Lunda instance safely.
+
+<Steps>
+  <Step title="Backup Configuration" icon="database">
+
+    Export your project settings and docs from the dashboard.
+
+    ```bash
+    lunda export --project=my-docs --output=backup.json
+    ```
+
+  </Step>
+  <Step title="Update Package" icon="download">
+    
+    Use your preferred package manager.
+
+    <CodeGroup tabs="npm,yarn,pnpm">
+      ````bash
+      npm install lunda@latest
+      ````
+      ````bash
+      yarn add lunda@latest
+      ````
+      ````bash
+      pnpm add lunda@latest
+      ````
+    </CodeGroup>
+
+  </Step>
+  <Step title="Restart and Verify" icon="check-circle">
+
+    Restart your Lunda server and test a page build.
+
+    ```bash
+    lunda start --verify
+    ```
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Review migration guides for breaking changes in each release above before upgrading production sites.
+</Callout>
+
+## Upcoming Features
+
+Preview what's next for Lunda to plan your workflows.
+
+<Columns cols={3}>
+  <Card title="AI Assistant" icon="bot" href="#ai-assistant">
+    Generate MDX content and fix parsing errors automatically.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="#version-control">
+    Native Git integration for doc versioning and rollbacks.
+  </Card>
+  <Card title="Advanced Analytics" icon="bar-chart-3" href="#analytics">
+    Track doc views, search queries, and user engagement.
+  </Card>
+</Columns>

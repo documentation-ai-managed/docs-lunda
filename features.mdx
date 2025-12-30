@@ -1,0 +1,105 @@
+---
+title: Key Features
+description: Explore Lunda's main capabilities for managing and enhancing your project documentation, from editing tools to version control.
+---
+
+## Overview
+
+Lunda provides powerful tools to streamline your project documentation. You manage content efficiently with advanced editing, track changes seamlessly, search documents quickly, and share or export them easily. These features help you maintain organized, up-to-date docs for your team.
+
+<Columns cols={2}>
+  <Card title="Editing Tools" icon="edit-3" href="#advanced-editing">
+    Rich formatting and real-time previews accelerate your workflow.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="#version-history">
+    Track every change with full history and rollback options.
+  </Card>
+  <Card title="Search & Filter" icon="search" href="#search-filtering">
+    Find content instantly across your documentation space.
+  </Card>
+  <Card title="Export & Share" icon="share-2" href="#exporting-sharing">
+    Generate PDFs, Markdown, or share live links securely.
+  </Card>
+</Columns>
+
+## Advanced Editing and Formatting Options
+
+You access a full-featured editor in Lunda with support for Markdown, rich text, and custom components. Real-time previews let you see changes instantly, while syntax highlighting ensures code blocks render perfectly.
+
+<CodeGroup tabs="Markdown,Rich Text">
+  ```markdown
+  # Welcome to Lunda
+
+  ## Key Features
+
+  - **Bold** and *italic* text
+  - `Inline code` for snippets
+  - ```javascript
+    console.log('Hello, Lunda!');
+    ```
+
+  > Blockquote for tips.
+  ```
+  ```html
+  <h1>Welcome to Lunda</h1>
+
+  <h2>Key Features</h2>
+  <ul>
+    <li><strong>Bold</strong> and <em>italic</em> text</li>
+    <li><code>Inline code</code> for snippets</li>
+  </ul>
+  ```
+</CodeGroup>
+
+<Callout kind="tip">
+  Use the `{/* Comment */}` syntax for MDX comments that don't appear in previews.
+</Callout>
+
+## Version History and Change Tracking
+
+Lunda automatically saves every edit, creating a complete version history. You review changes, compare versions, and restore previous states with simple clicks.
+
+<Steps>
+  <Step title="View History" icon="clock">
+    Open any document and click the history icon in the toolbar.
+  </Step>
+  <Step title="Compare Changes" icon="git-compare">
+    Select two versions to see a side-by-side diff.
+  </Step>
+  <Step title="Restore Version" icon="refresh-cw">
+    Click restore to revert the document to that state.
+  </Step>
+</Steps>
+
+## Search and Filtering Documentation
+
+Powerful search helps you locate content across your entire documentation space. Filter by tags, authors, or dates for precise results.
+
+<Tabs>
+  <Tab title="Basic Search" icon="search">
+    Enter keywords in the global search bar to find matches instantly.
+  </Tab>
+  <Tab title="Advanced Filters" icon="filter">
+    Combine tags like `feature` or `api` with date ranges: `created:>2024-01-01`.
+  </Tab>
+  <Tab title="Saved Searches" icon="bookmark">
+    Save frequent queries for quick access from the sidebar.
+  </Tab>
+</Tabs>
+
+## Exporting and Sharing Docs
+
+Export your documentation in multiple formats or generate shareable links. You control access with passwords or public/private settings.
+
+<Expandable title="Export Options" default-open="true">
+  | Format     | Use Case                  |
+  |------------|---------------------------|
+  | PDF       | Printable handbooks      |
+  | Markdown  | GitHub repos             |
+  | HTML      | Static websites          |
+  | ZIP       | Full project archives    |
+</Expandable>
+
+<Callout kind="info">
+  Shared links support viewer analytics, tracking opens and time spent.
+</Callout>
